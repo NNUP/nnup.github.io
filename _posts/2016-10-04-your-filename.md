@@ -4,6 +4,10 @@ type: standard
 homedisplay: featimg
 published: true
 title: New Post
+author: someone
+featimg: 1.jpg
+tags: [text]
+category: [standard]
 ---
 ## A New Post
 
