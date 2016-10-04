@@ -5,7 +5,7 @@ description: the good site of life
 
 
 {% for post in paginator.posts %}
-{% if post.category == 'nnup'%}
+{% if post.category == 'standard' %}
   {% include article_index.html %}
   {% endif %}
 {% endfor %}
