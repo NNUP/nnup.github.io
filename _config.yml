@@ -31,9 +31,10 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post-material-sidebar-left"
+      layout: "post-classic-sidebar-right"
       type: "standard"
       homedisplay: "featimg"
+      
 markdown: kramdown
 kramdown:
   input: GFM
@@ -57,7 +58,7 @@ prose:
           help: "display post at full width or with sidebar"
           options:
             - name: "with sidebar"
-              value: "post"
+              value: "post-classic-sidebar-right"
             - name: "full width"
               value: "post-full"
       - name: "author"
@@ -66,6 +67,20 @@ prose:
           label: "Author"
           help: "author id as defined within _data/authors.yml"
           type: "text"
+      - name: "category"
+        field:
+          element: "select"
+          label: "Choose Category"
+          placeholder: "Choose Category"
+          options:
+            - name: "NNUP"
+              value: "nnup"
+            - name: "News"
+              value: "news" 
+            - name: "Directory"
+              value: "directory"
+            - name: "Job Info!"
+              value: "jobInfo" 
       - name: "featimg"
         field:
           element: "text"
