@@ -3,14 +3,12 @@ layout: index-classic-sidebar-right
 description: the good site of life
 ---
 
-<ul>
-  {% for post in site.posts | where: "category", "nnup" %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
+{% for post in paginator.posts %}
+{% if post.category == 'nnup'%}
+  {% include article_index.html %}
+  {% endif %}
+{% endfor %}
 
 {% if paginator.total_pages > 1 %}
     <div class="pagination">
