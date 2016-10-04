@@ -105,9 +105,7 @@ module.exports = function (grunt) {
                     'css/grid.css': 'sass/grid.scss',
                     'css/classic.css': 'sass/classic.scss',
                     // you may want to remove these for your site
-                    'css/main_brown.css': 'sass/main_brown.scss',
-                    'css/main_green.css': 'sass/main_green.scss',
-                    'css/main_teal.css': 'sass/main_teal.scss'
+
                 }
             }
         },
@@ -179,7 +177,7 @@ module.exports = function (grunt) {
             },
             pages: {
                 options: {
-                    remote: 'git@github.com:DigitalMindCH/gridster-jekyll-theme.git', // change that
+                    remote: 'https://github.com/NNUP/nnup.github.io.git', // change that
                     branch: 'gh-pages' // adjust here
                 }
             }
