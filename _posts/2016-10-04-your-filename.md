@@ -1,6 +1,4 @@
 ---
-layout: post
-type: standard
 homedisplay: featimg
 published: true
 title: New Post
