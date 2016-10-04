@@ -3,21 +3,17 @@ layout: index-classic-sidebar-right
 description: the good site of life
 ---
 
-
-{% for post in site.nnup.posts %}
-   <div class="post-box">
-     <div class="post-title">
-       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-     </div>
-     <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-     <p class="post-excerpt">{{ post.excerpt }}</p>
-     <div>
-       {% for category in post.categories %}
-         <a href="#">#{{ category }}</a>
-       {% endfor %}
-     </div>
-   </div>
- {% endfor %}
+{% for category in site.categories %}
+  <li><a name="{{ category | first }}">{{ category | first }}</a>
+    <ul>
+    {% for posts in category %}
+      {% for post in posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </li>
+{% endfor %}
 
 {% if paginator.total_pages > 1 %}
     <div class="pagination">
