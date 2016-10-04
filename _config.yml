@@ -10,7 +10,7 @@ paginate_path: /page/:num/
 infinite_scroll: true #change to false if you want to use pagination
 gems: [jekyll-paginate]
 tag_dir: /tag
-category_dir: /category
+category_dir: 
 author_dir: /author
 author_title_prefix: 'Posted by '
 media_folder: /media/compressed
@@ -32,7 +32,7 @@ defaults:
       layout: "post-classic-sidebar-right"
       type: "standard"
       homedisplay: "featimg"
-      
+
 markdown: kramdown
 kramdown:
   input: GFM
@@ -74,11 +74,11 @@ prose:
             - name: "NNUP"
               value: "nnup"
             - name: "News"
-              value: "news" 
+              value: "news"
             - name: "Directory"
               value: "directory"
             - name: "Job Info!"
-              value: "jobInfo" 
+              value: "jobInfo"
       - name: "featimg"
         field:
           element: "text"
