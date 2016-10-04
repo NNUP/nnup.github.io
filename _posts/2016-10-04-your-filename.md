@@ -2,7 +2,7 @@
 layout: post
 type: standard
 homedisplay: featimg
-published: false
+published: true
 title: New Post
 ---
 ## A New Post
